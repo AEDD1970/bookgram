@@ -1,0 +1,1 @@
+Rails.application.config.tme_zone = 'Central time(US & Canda)'

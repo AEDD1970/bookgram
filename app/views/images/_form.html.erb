@@ -1,0 +1,25 @@
+
+
+
+<div class="form-group">
+   <%= form_for @image do |f| %>
+     <%= f.label :description%> <br>
+     <%= f.text_field :description, class: 'form-control' %>
+     <%- if @image.errors[:descriptions].any? %>
+     <span class="badge badge-pell badge-pell">
+     <%= @image.errors[:description].first %>
+     </span>
+     <% end %><s 
+     <br>
+     <%= f.label :picture%> <br>
+     <%= f.file_field :picture %>
+     <br>
+     <%= f.submit 'Enviar', :class => 'btb btn-primary' %>
+    <% end %>
+<div>
+<%- if @image.errors.any? %>
+   <div class="alert alert-danger">
+    <h4 classs="alert-heading">  :C </h4>
+    <p> ha ocurrido un error </p>
+   </div>
+<% end %>
