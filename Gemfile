@@ -6,7 +6,7 @@ ruby '2.6.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use postgresql as the database for Active Record
-gem 'bootstrap', '~> 4.0.0alpha6'
+gem 'bootstrap', '~> 4.3'
 # Use bootstrap 
 #divise autointensicate
 gem 'devise', git: 'git://github.com/plataformatec/devise.git'
